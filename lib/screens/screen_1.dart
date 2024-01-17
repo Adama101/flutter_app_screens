@@ -28,7 +28,8 @@ class _MyHomePageState extends State<Screen_1> {
               key: const Key('your_form_key'),
               child: Container(
                 width: double.maxFinite,
-                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 41),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 20, vertical: 41),
                 child: Column(
                   children: [
                     const Align(
@@ -36,20 +37,20 @@ class _MyHomePageState extends State<Screen_1> {
                       child: Text(
                         "Sign In",
                         style: TextStyle(
-                          // desired text style here
-                        ),
+                            // desired text style here
+                            ),
                       ),
                     ),
                     const SizedBox(
                       height: 25,
                     ),
-                    Align(
+                    const Align(
                       alignment: Alignment.centerLeft,
                       child: Text(
                         "Email Address",
                         style: TextStyle(
-                          // Add your desired text style here
-                        ),
+                            // Add your desired text style here
+                            ),
                       ),
                     ),
                     const SizedBox(
@@ -63,9 +64,9 @@ class _MyHomePageState extends State<Screen_1> {
                         prefixIcon: Container(
                           margin: const EdgeInsets.only(right: 16, bottom: 11),
                           child: Image.asset(
-                            'imgEmailsEmailmailletter',
-                            height: 22,
-                            width: 22,
+                            'assets/email.png',
+                            height: 22.0,
+                            width: 22.0,
                           ),
                         ),
                       ),
@@ -73,7 +74,7 @@ class _MyHomePageState extends State<Screen_1> {
                     const SizedBox(
                       height: 13.0,
                     ),
-                    Align(
+                    const Align(
                       alignment: Alignment.centerLeft,
                       child: Text(
                         "Password",
@@ -94,19 +95,17 @@ class _MyHomePageState extends State<Screen_1> {
                         ),
                         suffixIcon: Container(
                           margin: const EdgeInsets.only(left: 30, bottom: 11),
-                          child: Image.asset(
-                            "ImageConstant.imgEye,"
-                          ),
+                          child: Image.asset("ImageConstant.imgEye,"),
                         ),
                       ),
                     ),
                     const SizedBox(height: 38),
-                    Text(
+                    const Text(
                       "Sign In",
                     ),
                     const SizedBox(),
                     RichText(
-                      text: TextSpan(
+                      text: const TextSpan(
                         children: [
                           TextSpan(
                             text: "I’m a new user.",
@@ -140,7 +139,7 @@ class _MyHomePageState extends State<Screen_1> {
     return AppBar(
       leadingWidth: double.maxFinite,
       leading: IconButton(
-        icon: Icon(Icons.arrow_back),
+        icon: const Icon(Icons.arrow_back),
         onPressed: () {
           onTapArrowLeft(context);
         },
